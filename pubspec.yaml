@@ -25,4 +25,5 @@ flutter:
 
   assets:
     - assets/
+    - assets/note1.wav
 
