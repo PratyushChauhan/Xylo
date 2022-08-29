@@ -9,16 +9,71 @@ class XylophoneApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         body: SafeArea(
-          child: TextButton(
-            onPressed: () {
-              final player = AudioPlayer();
-              // player.setSource(AssetSource(
-              //     'assets/note1.waw'));
-              player.play(
-                  AssetSource("note1.wav")); // will immediately start playing
-            },
-            child: Center(child: Text("Clicc")),
-          ),
+          child: Column(children: <Widget>[
+            TextButton(
+              style: ButtonStyle(
+                  backgroundColor:
+                      MaterialStateProperty.all<Color>(Colors.red)),
+              onPressed: () {
+                final player = AudioPlayer();
+                player.play(AssetSource('note1.wav'));
+              },
+            ),
+            TextButton(
+              style: ButtonStyle(
+                  backgroundColor:
+                      MaterialStateProperty.all<Color>(Colors.orange)),
+              onPressed: () {
+                final player = AudioPlayer();
+                player.play(AssetSource('note2.wav'));
+              },
+            ),
+            TextButton(
+              style: ButtonStyle(
+                  backgroundColor:
+                      MaterialStateProperty.all<Color>(Colors.yellow)),
+              onPressed: () {
+                final player = AudioPlayer();
+                player.play(AssetSource('note3.wav'));
+              },
+            ),
+            TextButton(
+              style: ButtonStyle(
+                  backgroundColor:
+                      MaterialStateProperty.all<Color>(Colors.green)),
+              onPressed: () {
+                final player = AudioPlayer();
+                player.play(AssetSource('note4.wav'));
+              },
+            ),
+            TextButton(
+              style: ButtonStyle(
+                  backgroundColor:
+                      MaterialStateProperty.all<Color>(Colors.teal)),
+              onPressed: () {
+                final player = AudioPlayer();
+                player.play(AssetSource('note5.wav'));
+              },
+            ),
+            TextButton(
+              style: ButtonStyle(
+                  backgroundColor:
+                      MaterialStateProperty.all<Color>(Colors.blue)),
+              onPressed: () {
+                final player = AudioPlayer();
+                player.play(AssetSource('note6.wav'));
+              },
+            ),
+            TextButton(
+              style: ButtonStyle(
+                  backgroundColor:
+                      MaterialStateProperty.all<Color>(Colors.purple)),
+              onPressed: () {
+                final player = AudioPlayer();
+                player.play(AssetSource('note7.wav'));
+              },
+            ),
+          ]),
         ),
       ),
     );
