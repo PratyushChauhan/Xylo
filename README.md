@@ -1,4 +1,4 @@
-<h1>Xylo<\h1>
+<h1>Xylo</h1>
 A sound enabled flutter app
 
 Download apk - https://drive.google.com/file/d/1xFn1Qgx8n5G25gWdwF7tfIUYYTvaWIzi/view?usp=sharing
